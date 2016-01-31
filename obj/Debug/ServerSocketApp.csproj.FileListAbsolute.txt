@@ -7,3 +7,12 @@ C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ServerSocketApp.Form_Serv
 C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ServerSocketApp.Properties.Resources.resources
 C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ServerSocketApp.exe
 C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ServerSocketApp.pdb
+C:\Users\Omal Perera\Desktop\ServerSocketApp\bin\Debug\ServerSocketApp.exe.config
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.exe
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.pdb
+C:\Users\Omal Perera\Desktop\ServerSocketApp\bin\Debug\ServerSocketApp.exe
+C:\Users\Omal Perera\Desktop\ServerSocketApp\bin\Debug\ServerSocketApp.pdb
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.csprojResolveAssemblyReference.cache
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.Form_Server_Socket.resources
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.Properties.Resources.resources
+C:\Users\Omal Perera\Desktop\ServerSocketApp\obj\Debug\ServerSocketApp.csproj.GenerateResource.Cache

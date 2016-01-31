@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel_container = new System.Windows.Forms.Panel();
+            this.btn_start_listen = new System.Windows.Forms.Button();
             this.lbl_server_msg_show = new System.Windows.Forms.Label();
             this.lbl_rercieved_msg = new System.Windows.Forms.Label();
             this.lbl_server_status = new System.Windows.Forms.Label();
             this.btn_start_server = new System.Windows.Forms.Button();
-            this.btn_start_listen = new System.Windows.Forms.Button();
+            this.serialPort = new System.IO.Ports.SerialPort(this.components);
             this.panel_container.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,25 @@
             this.panel_container.Name = "panel_container";
             this.panel_container.Size = new System.Drawing.Size(486, 302);
             this.panel_container.TabIndex = 0;
+            // 
+            // btn_start_listen
+            // 
+            this.btn_start_listen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(55)))));
+            this.btn_start_listen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_start_listen.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btn_start_listen.FlatAppearance.BorderSize = 0;
+            this.btn_start_listen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btn_start_listen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btn_start_listen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_start_listen.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_start_listen.ForeColor = System.Drawing.Color.White;
+            this.btn_start_listen.Location = new System.Drawing.Point(174, 68);
+            this.btn_start_listen.Name = "btn_start_listen";
+            this.btn_start_listen.Size = new System.Drawing.Size(165, 29);
+            this.btn_start_listen.TabIndex = 7;
+            this.btn_start_listen.Text = "Start Listning";
+            this.btn_start_listen.UseVisualStyleBackColor = false;
+            this.btn_start_listen.Click += new System.EventHandler(this.btn_start_listen_Click);
             // 
             // lbl_server_msg_show
             // 
@@ -103,24 +124,10 @@
             this.btn_start_server.UseVisualStyleBackColor = false;
             this.btn_start_server.Click += new System.EventHandler(this.btn_conct_server_Click);
             // 
-            // btn_start_listen
+            // serialPort
             // 
-            this.btn_start_listen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(2)))), ((int)(((byte)(55)))));
-            this.btn_start_listen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_start_listen.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_start_listen.FlatAppearance.BorderSize = 0;
-            this.btn_start_listen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btn_start_listen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btn_start_listen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_start_listen.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_start_listen.ForeColor = System.Drawing.Color.White;
-            this.btn_start_listen.Location = new System.Drawing.Point(174, 68);
-            this.btn_start_listen.Name = "btn_start_listen";
-            this.btn_start_listen.Size = new System.Drawing.Size(165, 29);
-            this.btn_start_listen.TabIndex = 7;
-            this.btn_start_listen.Text = "Start Listning";
-            this.btn_start_listen.UseVisualStyleBackColor = false;
-            this.btn_start_listen.Click += new System.EventHandler(this.btn_start_listen_Click);
+            this.serialPort.BaudRate = 200;
+            this.serialPort.PortName = "COM8";
             // 
             // Form_Server_Socket
             // 
@@ -145,6 +152,7 @@
         private System.Windows.Forms.Label lbl_server_status;
         private System.Windows.Forms.Button btn_start_server;
         private System.Windows.Forms.Button btn_start_listen;
+        private System.IO.Ports.SerialPort serialPort;
     }
 }
 

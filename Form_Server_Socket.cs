@@ -34,23 +34,21 @@ namespace ServerSocketApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            serialPort.PortName = "COM8";
+            serialPort.Open();
+            serialPort.BaudRate = 200;
 
         }
 
         private void btn_conct_server_Click(object sender, EventArgs e)
         {
             start_the_server();
-
         }
 
         private void btn_start_listen_Click(object sender, EventArgs e)
         {
             listning_mode();
         }
-
-
-
-
 
 
         private void start_the_server()
@@ -217,7 +215,11 @@ namespace ServerSocketApp
         }
         public void HandleSelection_1()
         {
+            //showing the message fron the client
+            lbl_server_msg_show.Text = "";
             lbl_server_msg_show.Text = content;
+
+            serialPort.Write(lbl_server_msg_show.Text);
 
         }
 
@@ -256,32 +258,6 @@ namespace ServerSocketApp
         {
                 lbl_server_msg_show.Text = tbAux.Text;
         }
-    /*
-            private void button2_Click_1(object sender, EventArgs e)
-            {
-
-                try
-                {
-                    // Convert byte array to string 
-                    string str = txtB.Text;
-
-                    // Prepare the reply message 
-                    byte[] byteData =
-                        Encoding.Unicode.GetBytes(str);
-
-                    // Sends data asynchronously to a connected Socket 
-                    handler.BeginSend(byteData, 0, byteData.Length, 0,
-                        new AsyncCallback(SendCallback), handler);
-
-                    //Send_Button.IsEnabled = false;
-                    //Close_Button.IsEnabled = true;
-                }
-                catch (Exception exc)
-                {
-                    MessageBox.Show(exc.ToString());
-                }
-
-            }
-            */
+   
 }
 }
