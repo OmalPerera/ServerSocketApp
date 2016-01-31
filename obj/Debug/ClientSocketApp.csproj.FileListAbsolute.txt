@@ -1,0 +1,9 @@
+C:\Users\Omal Perera\Desktop\ClientSocketApp\bin\Debug\ClientSocketApp.exe.config
+C:\Users\Omal Perera\Desktop\ClientSocketApp\bin\Debug\ClientSocketApp.exe
+C:\Users\Omal Perera\Desktop\ClientSocketApp\bin\Debug\ClientSocketApp.pdb
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.csprojResolveAssemblyReference.cache
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.Form_Client_Socket.resources
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.Properties.Resources.resources
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.csproj.GenerateResource.Cache
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.exe
+C:\Users\Omal Perera\Desktop\ClientSocketApp\obj\Debug\ClientSocketApp.pdb
